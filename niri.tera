@@ -1,0 +1,87 @@
+---
+whiskers:
+  version: ^2.5.1
+  matrix:
+    - flavor
+    - accent
+  filename: themes/{{ flavor.identifier }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.kdl
+  hex_format: "#{{r}}{{g}}{{b}}"
+---
+layout {
+    # Theme: Catppuccin {{ flavor.name }} - {{ accent }}
+    gaps 16
+    center-focused-column "never"
+    always-center-single-column
+    empty-workspace-above-first
+    default-column-display "tabbed"
+    background-color "{{ base.hex }}"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    focus-ring {
+        off
+        // width 4
+        // active-color "{{ mauve.hex }}"
+        // inactive-color "{{ lavender.hex }}"
+        // urgent-color "{{ red.hex }}"
+        // active-gradient from="{{ mauve.hex }}" to="{{ flavor.colors[accent].hex }}" angle=45
+        // inactive-gradient from="{{ lavender.hex }}" to="{{ surface2.hex }}" angle=45 relative-to="workspace-view"
+        // urgent-gradient from="{{ yellow.hex }}" to="{{ peach.hex }}" angle=45
+    }
+
+    border {
+        on
+        width 2
+        active-color "{{ mauve.hex }}"
+        inactive-color "{{ lavender.hex }}"
+        urgent-color "{{ red.hex }}"
+        active-gradient from="{{ mauve.hex }}" to="{{ flavor.colors[accent].hex }}" angle=45
+        inactive-gradient from="{{ lavender.hex }}" to="{{ surface2.hex }}" angle=45 relative-to="workspace-view"
+        urgent-gradient from="{{ yellow.hex }}" to="{{ peach.hex }}" angle=45
+    }
+
+    shadow {
+        on
+        softness 30
+        spread 5
+        offset x=0 y=5
+        draw-behind-window true
+        color "{{ crust.hex }}4d"
+        inactive-color "{{ base.hex }}4d"
+    }
+
+    tab-indicator {
+        on
+        hide-when-single-tab
+        place-within-column
+        gap 5
+        width 4
+        length total-proportion=1.0
+        position "right"
+        gaps-between-tabs 2
+        corner-radius 8
+        active-color "{{ mauve.hex }}"
+        inactive-color "{{ lavender.hex }}"
+        urgent-color "{{ red.hex }}"
+        active-gradient from="{{ mauve.hex }}" to="{{ flavor.colors[accent].hex }}" angle=45
+        inactive-gradient from="{{ lavender.hex }}" to="{{ surface2.hex }}" angle=45 relative-to="workspace-view"
+        urgent-gradient from="{{ yellow.hex }}" to="{{ peach.hex }}" angle=45
+    }
+
+    insert-hint {
+        on
+        color "{{ peach.hex }}"
+        gradient from="{{ peach.hex }}" to="{{ flavor.colors[accent].hex }}" angle=45 relative-to="workspace-view"
+    }
+
+    struts {
+        // left 64
+        // right 64
+        // top 64
+        // bottom 64
+    }
+}

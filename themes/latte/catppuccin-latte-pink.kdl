@@ -1,0 +1,78 @@
+layout {
+    # Theme: Catppuccin Latte - pink
+    gaps 16
+    center-focused-column "never"
+    always-center-single-column
+    empty-workspace-above-first
+    default-column-display "tabbed"
+    background-color "#eff1f5"
+
+    preset-column-widths {
+        proportion 0.33333
+        proportion 0.5
+        proportion 0.66667
+    }
+
+    focus-ring {
+        off
+        // width 4
+        // active-color "#8839ef"
+        // inactive-color "#7287fd"
+        // urgent-color "#d20f39"
+        // active-gradient from="#8839ef" to="#ea76cb" angle=45
+        // inactive-gradient from="#7287fd" to="#acb0be" angle=45 relative-to="workspace-view"
+        // urgent-gradient from="#df8e1d" to="#fe640b" angle=45
+    }
+
+    border {
+        on
+        width 2
+        active-color "#8839ef"
+        inactive-color "#7287fd"
+        urgent-color "#d20f39"
+        active-gradient from="#8839ef" to="#ea76cb" angle=45
+        inactive-gradient from="#7287fd" to="#acb0be" angle=45 relative-to="workspace-view"
+        urgent-gradient from="#df8e1d" to="#fe640b" angle=45
+    }
+
+    shadow {
+        on
+        softness 30
+        spread 5
+        offset x=0 y=5
+        draw-behind-window true
+        color "#dce0e84d"
+        inactive-color "#eff1f54d"
+    }
+
+    tab-indicator {
+        on
+        hide-when-single-tab
+        place-within-column
+        gap 5
+        width 4
+        length total-proportion=1.0
+        position "right"
+        gaps-between-tabs 2
+        corner-radius 8
+        active-color "#8839ef"
+        inactive-color "#7287fd"
+        urgent-color "#d20f39"
+        active-gradient from="#8839ef" to="#ea76cb" angle=45
+        inactive-gradient from="#7287fd" to="#acb0be" angle=45 relative-to="workspace-view"
+        urgent-gradient from="#df8e1d" to="#fe640b" angle=45
+    }
+
+    insert-hint {
+        on
+        color "#fe640b"
+        gradient from="#fe640b" to="#ea76cb" angle=45 relative-to="workspace-view"
+    }
+
+    struts {
+        // left 64
+        // right 64
+        // top 64
+        // bottom 64
+    }
+}
