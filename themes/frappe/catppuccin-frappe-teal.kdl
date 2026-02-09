@@ -1,78 +1,46 @@
 layout {
     # Theme: Catppuccin Frappé - teal
-    gaps 16
-    center-focused-column "never"
-    always-center-single-column
-    empty-workspace-above-first
-    default-column-display "tabbed"
     background-color "#303446"
 
-    preset-column-widths {
-        proportion 0.33333
-        proportion 0.5
-        proportion 0.66667
-    }
-
     focus-ring {
-        off
-        // width 4
-        // active-color "#ca9ee6"
-        // inactive-color "#babbf1"
-        // urgent-color "#e78284"
-        // active-gradient from="#ca9ee6" to="#81c8be" angle=45
-        // inactive-gradient from="#babbf1" to="#626880" angle=45 relative-to="workspace-view"
-        // urgent-gradient from="#e5c890" to="#ef9f76" angle=45
+        active-color "#81c8be"
+        inactive-color "#414559"
+        urgent-color "#e78284"
     }
 
     border {
-        on
-        width 2
-        active-color "#ca9ee6"
-        inactive-color "#babbf1"
+        active-color "#81c8be"
+        inactive-color "#414559"
         urgent-color "#e78284"
-        active-gradient from="#ca9ee6" to="#81c8be" angle=45
-        inactive-gradient from="#babbf1" to="#626880" angle=45 relative-to="workspace-view"
-        urgent-gradient from="#e5c890" to="#ef9f76" angle=45
     }
 
     shadow {
-        off
-        softness 30
-        spread 5
-        offset x=0 y=5
-        draw-behind-window true
         color "#2326344d"
         inactive-color "#3034464d"
     }
 
     tab-indicator {
-        on
-        hide-when-single-tab
-        place-within-column
-        gap 5
-        width 4
-        length total-proportion=1.0
-        position "right"
-        gaps-between-tabs 2
-        corner-radius 8
-        active-color "#ca9ee6"
-        inactive-color "#babbf1"
+        active-color "#81c8be"
+        inactive-color "#414559"
         urgent-color "#e78284"
-        active-gradient from="#ca9ee6" to="#81c8be" angle=45
-        inactive-gradient from="#babbf1" to="#626880" angle=45 relative-to="workspace-view"
-        urgent-gradient from="#e5c890" to="#ef9f76" angle=45
     }
 
     insert-hint {
-        on
         color "#ef9f76"
-        gradient from="#ef9f76" to="#81c8be" angle=45 relative-to="workspace-view"
     }
+}
 
-    struts {
-        // left 64
-        // right 64
-        // top 64
-        // bottom 64
+recent-windows {
+    highlight {
+        active-color "#81c8be"
+        urgent-color "#e78284"
+    }
+}
+
+overview {
+    backdrop-color "#292c3c"
+    workspace-shadow {
+        color "#2326344d"
+        inactive-color "#3034464d"
     }
 }
