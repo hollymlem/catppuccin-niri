@@ -38,3 +38,10 @@ layout {
         color "{{ peach.hex }}"
     }
 }
+
+recent-windows {
+    highlight {
+        active-color "{{ flavor.colors[accent].hex }}"
+        urgent-color "{{ red.hex }}"
+    }
+}
