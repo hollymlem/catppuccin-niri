@@ -45,3 +45,11 @@ recent-windows {
         urgent-color "{{ red.hex }}"
     }
 }
+
+overview {
+    backdrop-color "{{ mantle.hex }}"
+    workspace-shadow {
+        color "{{ crust.hex }}4d"
+        inactive-color "{{ base.hex }}4d"
+    }
+}
