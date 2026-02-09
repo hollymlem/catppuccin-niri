@@ -12,14 +12,14 @@ layout {
     background-color "{{ base.hex }}"
 
     focus-ring {
-        inactive-color "{{ lavender.hex }}"
         active-color "{{ flavor.colors[accent].hex }}"
+        inactive-color "{{ surface0.hex }}"
         urgent-color "{{ red.hex }}"
     }
 
     border {
-        inactive-color "{{ lavender.hex }}"
         active-color "{{ flavor.colors[accent].hex }}"
+        inactive-color "{{ surface0.hex }}"
         urgent-color "{{ red.hex }}"
     }
 
@@ -29,8 +29,8 @@ layout {
     }
 
     tab-indicator {
-        inactive-color "{{ lavender.hex }}"
         active-color "{{ flavor.colors[accent].hex }}"
+        inactive-color "{{ surface0.hex }}"
         urgent-color "{{ red.hex }}"
     }
 
