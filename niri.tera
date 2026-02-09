@@ -24,8 +24,8 @@ layout {
     }
 
     shadow {
-        color "{{ crust.hex }}4d"
-        inactive-color "{{ base.hex }}4d"
+        color "{{ crust | mod(opacity=0.3) | get(key="hex") }}"
+        inactive-color "{{ base | mod(opacity=0.3) | get(key="hex") }}"
     }
 
     tab-indicator {
@@ -49,7 +49,7 @@ recent-windows {
 overview {
     backdrop-color "{{ mantle.hex }}"
     workspace-shadow {
-        color "{{ crust.hex }}4d"
-        inactive-color "{{ base.hex }}4d"
+        color "{{ crust | mod(opacity=0.3) | get(key="hex") }}"
+        inactive-color "{{ base | mod(opacity=0.3) | get(key="hex") }}"
     }
 }
